@@ -43,6 +43,12 @@
 		768F5D78297F13AD00368650 /* ChartCoreClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F5D77297F13AD00368650 /* ChartCoreClass.swift */; };
 		768F5D7A297F140100368650 /* AnalyticsLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F5D79297F140100368650 /* AnalyticsLibrary.swift */; };
 		768F5D7E297F148200368650 /* XMLtoJSONAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768F5D7D297F148200368650 /* XMLtoJSONAdapter.swift */; };
+		76F546542C56FAD100114A5B /* NetworkServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F546532C56FAD100114A5B /* NetworkServiceFactory.swift */; };
+		76F546562C56FAE300114A5B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F546552C56FAE300114A5B /* ViewModel.swift */; };
+		76F546582C56FB3A00114A5B /* RealNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F546572C56FB3A00114A5B /* RealNetworkService.swift */; };
+		76F5465A2C56FB6900114A5B /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F546592C56FB6900114A5B /* MockNetworkService.swift */; };
+		76F5465C2C56FBBE00114A5B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F5465B2C56FBBE00114A5B /* NetworkService.swift */; };
+		76F5465E2C56FCB800114A5B /* Example2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F5465D2C56FCB800114A5B /* Example2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +109,12 @@
 		768F5D77297F13AD00368650 /* ChartCoreClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCoreClass.swift; sourceTree = "<group>"; };
 		768F5D79297F140100368650 /* AnalyticsLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsLibrary.swift; sourceTree = "<group>"; };
 		768F5D7D297F148200368650 /* XMLtoJSONAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLtoJSONAdapter.swift; sourceTree = "<group>"; };
+		76F546532C56FAD100114A5B /* NetworkServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceFactory.swift; sourceTree = "<group>"; };
+		76F546552C56FAE300114A5B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		76F546572C56FB3A00114A5B /* RealNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealNetworkService.swift; sourceTree = "<group>"; };
+		76F546592C56FB6900114A5B /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
+		76F5465B2C56FBBE00114A5B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		76F5465D2C56FCB800114A5B /* Example2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,10 +271,8 @@
 		768F5D64297D91DF00368650 /* FactoryMethod */ = {
 			isa = PBXGroup;
 			children = (
-				768F5D65297D962500368650 /* ProfileViewFactory.swift */,
-				768F5D67297D963500368650 /* StandardUserProfileView.swift */,
-				768F5D69297D964700368650 /* PrivilegedUserProfileView.swift */,
-				768F5D6B297D96C300368650 /* ProfileView.swift */,
+				76F546522C56FAB700114A5B /* Example2 */,
+				76F546512C56FAAD00114A5B /* Example1 */,
 			);
 			path = FactoryMethod;
 			sourceTree = "<group>";
@@ -286,6 +296,30 @@
 				768F5D7D297F148200368650 /* XMLtoJSONAdapter.swift */,
 			);
 			path = Adapter;
+			sourceTree = "<group>";
+		};
+		76F546512C56FAAD00114A5B /* Example1 */ = {
+			isa = PBXGroup;
+			children = (
+				768F5D65297D962500368650 /* ProfileViewFactory.swift */,
+				768F5D67297D963500368650 /* StandardUserProfileView.swift */,
+				768F5D69297D964700368650 /* PrivilegedUserProfileView.swift */,
+				768F5D6B297D96C300368650 /* ProfileView.swift */,
+			);
+			path = Example1;
+			sourceTree = "<group>";
+		};
+		76F546522C56FAB700114A5B /* Example2 */ = {
+			isa = PBXGroup;
+			children = (
+				76F546532C56FAD100114A5B /* NetworkServiceFactory.swift */,
+				76F546572C56FB3A00114A5B /* RealNetworkService.swift */,
+				76F546552C56FAE300114A5B /* ViewModel.swift */,
+				76F546592C56FB6900114A5B /* MockNetworkService.swift */,
+				76F5465B2C56FBBE00114A5B /* NetworkService.swift */,
+				76F5465D2C56FCB800114A5B /* Example2ViewController.swift */,
+			);
+			path = Example2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +456,7 @@
 				768F5D7E297F148200368650 /* XMLtoJSONAdapter.swift in Sources */,
 				768F5D0B2979D46200368650 /* ViewController.swift in Sources */,
 				768F5D55297C8B9400368650 /* TireDecorator.swift in Sources */,
+				76F546582C56FB3A00114A5B /* RealNetworkService.swift in Sources */,
 				768F5D71297F0F8000368650 /* LocationManager.swift in Sources */,
 				768F5D53297C8B7F00368650 /* OffRoadRaceCarDecorator.swift in Sources */,
 				768F5D76297F136200368650 /* StockDataProvider.swift in Sources */,
@@ -430,20 +465,25 @@
 				768F5D6F297F0DAC00368650 /* Calculator.swift in Sources */,
 				768F5D3A2979D47B00368650 /* Burger.swift in Sources */,
 				768F5D072979D46200368650 /* AppDelegate.swift in Sources */,
+				76F5465A2C56FB6900114A5B /* MockNetworkService.swift in Sources */,
 				768F5D57297C8D4900368650 /* ChainedRaceCarDecorator.swift in Sources */,
 				768F5D4A297C26BC00368650 /* PopcornPopper.swift in Sources */,
 				768F5D7A297F140100368650 /* AnalyticsLibrary.swift in Sources */,
 				768F5D78297F13AD00368650 /* ChartCoreClass.swift in Sources */,
+				76F546542C56FAD100114A5B /* NetworkServiceFactory.swift in Sources */,
 				768F5D48297C26AB00368650 /* DVD.swift in Sources */,
 				768F5D46297C269F00368650 /* Amplifier.swift in Sources */,
+				76F5465C2C56FBBE00114A5B /* NetworkService.swift in Sources */,
 				768F5D5E297D83EF00368650 /* OnlineBidder.swift in Sources */,
 				768F5D66297D962500368650 /* ProfileViewFactory.swift in Sources */,
 				768F5D5C297D83D000368650 /* Bidder.swift in Sources */,
 				768F5D5A297D83C600368650 /* Auctioneer.swift in Sources */,
+				76F546562C56FAE300114A5B /* ViewModel.swift in Sources */,
 				768F5D4C297C26CD00368650 /* Projector.swift in Sources */,
 				768F5D112979D46200368650 /* DesignPatterns.xcdatamodeld in Sources */,
 				768F5D6C297D96C300368650 /* ProfileView.swift in Sources */,
 				768F5D74297F12EA00368650 /* Chart.swift in Sources */,
+				76F5465E2C56FCB800114A5B /* Example2ViewController.swift in Sources */,
 				768F5D3D2979D58200368650 /* BurgerBuilder.swift in Sources */,
 				768F5D44297C266900368650 /* HomeTheaterFacade.swift in Sources */,
 				768F5D60297D83FA00368650 /* InPersonBidder.swift in Sources */,
